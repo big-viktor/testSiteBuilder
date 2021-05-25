@@ -1,23 +1,37 @@
 
   <header class="header_conteiner">
-    <div class="content_logo">
-        <a class="navbar-brand" href="#"><img src="img/port-logo.png" alt="" class="logo_foto"></a>
+    <div class="contact">
+      <p class="contact_nome">+38 (067) 467-37-67</p>
+      <p class="contact_nome">+38 (067) 467-37-67</p>
+      <div class="soc_contact">
+        <img src="img/linkedin 1.png" alt="#" class="sociall_contact">
+        <img src="img/facebook 1.png" alt="#" class="sociall_contact">
+        <img src="img/instagram 1.png" alt="#" class="sociall_contact">
+      </div>
+    </div>
+    <div class="content_menu">
+      <div class="content_logo">
+        <img src="img/LOGO.png" alt="#" class="logo_foto">
       </div>
       <div class="menu_content" >
-        <a class="header_menu active" aria-current="page" href="#">ГОЛОВНА</a>
-        <a class="header_menu" href="#">ПРО ПОРТ</a>
-        <a class="header_menu" href="#">ТЕРМІНАЛ</a>
-        <a class="header_menu" href="#">ТЕНДЕРИ</a>
-        <a class="header_menu" href="#">РОЗКЛАД СУДІВ</a>
-        <a class="header_menu" href="#">ПРОЕКТ РЕКОНСТРУКЦІЇ</a>
-        <a class="header_menu" href="#">НОВИНИ</a>
-        <a class="header_menu" href="#">ВАКАНСІЇ</a>
-        <a class="header_menu" href="#">КОНТАКТИ</a>
+        <a class="header_menu active" aria-current="page" href="#">Про нас</a>
+        <a class="header_menu" href="#">Відгуки</a>
+        <a class="header_menu" href="#">Ціни</a>
+        <a class="header_menu" href="#">Наші роботи</a>
+        <a class="header_menu" href="#">Контакти</a>
       </div>
-      <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle" id="burger">
-        <span></span>
-        </label>
+      <div>
+        @@include('_button.html',{
+          "name":"Замовити дзвінок",
+          "button1":true,
+        })
       </div>
+     
+    </div>
+    <div class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle" id="burger">
+      <span></span>
+      </label>
+    </div>
   </header>

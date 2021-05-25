@@ -1,0 +1,105 @@
+.container_contactUs{
+    display: flex;
+    flex-direction: column;
+}
+.contactUs_input{
+    width: 304px;
+    background: none;
+    border: none;
+    border-bottom:  0.5px solid #FFFFFF;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.07em;
+    color:#FFFFFF;
+    text-decoration-color: rgba(255, 255, 255, 0.72);
+    margin-right: 90px;
+    margin-top: 50px;
+}
+.contactUs_input1{
+    width: 705px;
+    background: none;
+    border: none;
+    border-bottom:  0.5px solid #FFFFFF;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.07em;
+    color:#FFFFFF;
+    text-decoration-color: rgba(255, 255, 255, 0.72);
+    margin: 50px 0px 50px 0px;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.72);
+}
+.title_contactUs{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #FFFFFF;
+
+}
+.title_contactUs1{
+    font-family: Gilroy;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    font-style: normal;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+
+}
+@media(max-width:740px){
+    .contactUs_input{
+        width: 100%;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.07em;
+        margin-right: 0px;
+        margin-top: 50px;
+    }
+    .contactUs_input1{
+        width: 100%;
+        font-size: 16px;
+        margin: 50px 0px 50px 0px;
+    }
+    .title_contactUs{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .title_contactUs1{
+        font-size: 12px;
+        line-height: 21px;
+        letter-spacing: 0.005em;
+    }
+}
+@media(max-width:555px){
+    .contactUs_input{
+        width: 100%;
+        font-size: 12px;
+        line-height: 19px;
+        letter-spacing: 0.07em;
+        margin-right: 0px;
+        margin-top: 50px;
+    }
+    .contactUs_input1{
+        width: 100%;
+        font-size: 16px;
+        margin: 50px 0px 50px 0px;
+    }
+    .title_contactUs{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .title_contactUs1{
+        font-size: 8px;
+        line-height: 21px;
+        letter-spacing: 0.005em;
+    }
+}

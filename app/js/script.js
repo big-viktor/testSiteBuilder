@@ -1,47 +1,47 @@
-const burger = document.getElementById("burger"); 
-const menuContent = document.querySelector('.menu_content')
-// const headerCatalog = document.querySelector('.content_header_catalog')
-const contentSvg = document.querySelector('.basket')
-// const menuBody1 = document.querySelector('.header_a1');
-// const menuBody2 = document.querySelector('.header_a2');
+// const burger = document.getElementById("burger"); 
+// const menuContent = document.querySelector('.menu_content')
+// // const headerCatalog = document.querySelector('.content_header_catalog')
+// const contentSvg = document.querySelector('.basket')
+// // const menuBody1 = document.querySelector('.header_a1');
+// // const menuBody2 = document.querySelector('.header_a2');
 
 
-let burgers = false;
+// let burgers = false;
 
-  const  addSelect = () =>{
-    if(burgers){
-        burgers = false;
-        menuContent.classList.remove("_active");
-    }else {
-        burgers = true;
-        menuContent.classList.add("_active");
-    };
-};
-burger.addEventListener("click",addSelect);
+//   const  addSelect = () =>{
+//     if(burgers){
+//         burgers = false;
+//         menuContent.classList.remove("_active");
+//     }else {
+//         burgers = true;
+//         menuContent.classList.add("_active");
+//     };
+// };
+// burger.addEventListener("click",addSelect);
    
 
 
 
-const widthBack = document.getElementById("width_back"); 
-const widthVideo = document.querySelector(".video__media"); 
-console.log(widthVideo)
+// const widthBack = document.getElementById("width_back"); 
+// const widthVideo = document.querySelector(".video__media"); 
+// console.log(widthVideo)
 
 
 
-const widthWindow = () => {
-    console.log('resize');
-    console.log(screen.width);
-    if(screen.width <= (754)){
-        widthBack.classList.remove("delet");
-        widthVideo.classList.add("delet");
-    }
-    if(screen.width >+(754)){
-        widthBack.classList.add("delet");
-        widthVideo.classList.remove("delet");
-    }
-}
-window.addEventListener('resize', widthWindow);
-widthWindow();
+// const widthWindow = () => {
+//     console.log('resize');
+//     console.log(screen.width);
+//     if(screen.width <= (754)){
+//         widthBack.classList.remove("delet");
+//         widthVideo.classList.add("delet");
+//     }
+//     if(screen.width >+(754)){
+//         widthBack.classList.add("delet");
+//         widthVideo.classList.remove("delet");
+//     }
+// }
+// window.addEventListener('resize', widthWindow);
+// widthWindow();
 
 
 

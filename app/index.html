@@ -5,32 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width = device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>GulpSite</title>
 </head>
 <body>
-    <div class=".container-fluid">
-        <div class="video">
-            <img src="img/background.png" alt="#" class="delet" id="width_back">
-            <video autoplay muted loop class="video__media">
-                <source src="img/main-video.mp4" type="video/mp4" id="width_video" >
-              </video>
-                <div class="containers">
-                    <div class="wraper">
-                        <div class="header_">
-                            @@include('_header.html')
-                        </div>
-                        
+    <div class="containers">
+        <div style="background: url('img/7ae12d32d738c359ad8b0af94684fb56.png'); background-size: 100% 100%;" class="header">
+            <div>
+                @@include('_header.html')
+            </div>
+            <div class="container-header-text">
+                <div>
+                    <div>
+                        @@include('_textContent.html',{
+                            "title":"Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.",
+                            "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at <br> aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor <br> justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam.",
+                        })
                     </div>
-                    @@include('_cap.html')
+                    <div style="margin-top: 60px;">
+                        @@include('_button.html',{
+                            "name":"Залишити заявку",
+                            "button2":true,
+                          })
+                    </div>
                 </div>
+            </div>
+            <div  class="content-infos">
+               <div>
+                @@include('_componentInformation.html',{
+                    "name":"Фіксований <br> кошторис",
+                    "src":"img/business 1.png",
+                })
+               </div>
+               <div>
+                @@include('_componentInformation.html',{
+                    "name":"Працюємо без  <br> авансів",
+                    "src":"img/money-bag 1.png",
+                })
+               </div>
+               <div>
+                @@include('_componentInformation.html',{
+                    "name":"Щотижнева <br> звітність робочого <br> процесу",
+                    "src":"img/business-report 1.png",
+                })
+               </div>
+               <div>
+                @@include('_componentInformation.html',{
+                    "name":"Здача роботи у <br> зазначені <br> терміни",
+                    "src":"img/fast 2.png",
+                })
+               </div>
+               <div>
+                @@include('_componentInformation.html',{
+                    "name":"Гарантія на <br> роботи",
+                    "src":"img/guarantee 1.png",
+                })
+               </div>
+            </div>
+          
         </div>
-        @@include('_slide.html')
-        @@include('_history.html')
+        <div class="wraper">
+           <div class="container-group">
+               <div>
+                    <img src="img/Mask Group (1).png" alt="#" class="img_group">
+                    <div class="content_group">
+                        <p class="text_group">10+</p>
+                        <p class="text_group2">Років досвіду</p>
+                    </div>
+               </div>
+               <div class="container-text-group">
+                   <div>
+                    @@include('_componentTitle.html',{
+                        "title1":true,
+                        "name":"Про нас",
+                        "text":"Хто ми такі?"
+                    })
+                   </div>
+                   <div>
+                       <p class="title-text-group">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam <br> condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque <br> sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo <br> lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet <br> quam. Orci varius natoque penatibus et magnis dis parturient <br> montes, nascetur ridiculus mus. Phasellus id quam nulla. Proin <br> consequat mauris augue, id suscipit risus mattis non. Sed a <br> vulputate diam.<br> <br> Mauris eget urna quis nisl lacinia convallis. Mauris ut urna sed <br> sem egestas hendrerit at vel quam. Vestibulum maximus velit <br> dui. </p>
+                   </div>
+               </div>
+           </div>
+                <div class="content-bacground">
+                    <div style="margin-bottom: 70px;">
+                        @@include('_componentTitle.html',{
+                            "title3":true,
+                            "name":"етапи роботи",
+                            "text":"Як ми працюємо?"
+                        })
+                    </div>
+                    <div class="content-border">
+                        @@include('_borderComponent.html',{
+                            "src":"img/Frame 8.png",
+                            "text":"Виїзд майстра на <br> обєкт для замірів",
+                        })
+                        @@include('_borderComponent.html',{
+                            "src":"img/Frame 2.png",
+                            "text":"Складання кошторису <br> згідно попередніх <br> домовлень",
+                        })
+                        @@include('_borderComponent.html',{
+                            "src":"img/Frame 3.png",
+                            "text":"Підписання договору",
+                        })
+                        @@include('_borderComponent.html',{
+                            "src":"img/Frame 1 (1).png",
+                            "text":"Закупівля матеріалу",
+                        })
+                        @@include('_borderComponent.html',{
+                            "src":"img/Frame 5.png",
+                            "text":"Вчасна здача <br> проекту",
+                        })
+                        @@include('_borderComponent.html',{
+                            "src":"img/Frame 2 (1).png",
+                            "text":"Щасливі замовники",
+                        })
+                    </div>
+                </div>
+                <div class="contactUs-container">
+                    @@include('_contactUs.html')
+                </div>
+                    <!-- @@include('_cap.html') -->
+        </div>
     </div>
    
   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
    <script src="js/script.min.js"></script>
 </body>
 </html>

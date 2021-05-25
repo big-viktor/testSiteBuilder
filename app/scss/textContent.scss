@@ -1,0 +1,44 @@
+.title_content{
+    margin: 0px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 139.4%;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+.text_content{
+    margin: 0px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 139.4%;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+@media(max-width:845px){
+    .title_content{
+        font-size: 20px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+    }
+    .text_content{
+        font-size: 9px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+    }
+}
+@media(max-width:450px){
+    .title_content{
+        font-size: 15px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+    }
+    .text_content{
+        font-size: 6px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+    }
+}

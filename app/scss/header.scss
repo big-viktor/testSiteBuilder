@@ -1,31 +1,66 @@
 
 .header_conteiner{
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #FFFFFF;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-.content_logo{
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
+.contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.31);
+  padding: 20px 90px 15px 0px;
 
+}
+.sociall_contact{
+  margin-left: 25px;
+}
+.contact_nome{
+  margin: 0px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  margin-right: 50px;
+  color: #FFFFFF;
+}
+.content_logo{
+ 
+}
+.content_menu{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 90px 0px 90px;
+}
 .menu_content{
   display: flex;
   flex-direction: row;
   
 }
 .header_menu{
-  margin-right: 25px;
-  text-decoration:none;
-  font-family: Roboto;
+  margin: 0px;
+  font-family: Gilroy;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.07em;
   color: #FFFFFF;
+  text-decoration: none;
+  margin-left: 50px;
+}
+.header_menu:hover{
+  color: #FF9900;
+  border-bottom:1px solid;
+
   }
   ._active{
     display: flex;
@@ -39,49 +74,62 @@
     opacity: 0.8;
     z-index: 4;
     overflow: scroll;
-  }
-@media (max-width: 1290px) {
-  
-.header_conteiner{
-  margin-right: 20px;
-  margin-left: 20px;
- 
+}
+
+@media (max-width: 1100px) {
   .header_menu{
-    font-size: 10px;
-    }
+    font-size: 14px;
+    margin-left: 25px;
+  }
+  .contact_nome{
+    font-size: 14px;
+  }
+}
+ 
     
-}
-}
 
-@media (max-width: 950px) {
-    .logo_foto{
-      width: 90px;
-      height: 25px;
-    }
-    .header_menu{
-      margin-right: 10px;
-      font-size: 8px;
-    }
+@media (max-width: 830px) {
+  .header_menu{
+    font-size: 14px;
+    margin-left: 20px;
+  }
   }
   
 
 
-/* Landscape phones and portrait tablets */
-@media (max-width: 820px) {
-  .header_menu{
-    margin-right: 5px;
-    font-size: 6px;
+// /* Landscape phones and portrait tablets */
+@media (max-width: 620px) {
+  .contact_nome{
+    font-size: 8px;
+    margin-right: 25px;
+  }
+  .sociall_contact{
+    max-width: 15px;
+    margin-left: 10px;
   }
 }
 
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
-
+// /* Portrait phones and smaller */
+@media (max-width: 490px) {
+  .logo_foto{
+    width: 50px;
+  }
 }
 
-/* Iphone 5 */
-@media (max-width: 375px) {
- 
+// /* Iphone 5 */
+@media (max-width: 395px) {
+  .contact_nome{
+    font-size: 6px;
+    margin-right: 10px;
+  }
+  .sociall_contact{
+    max-width: 10px;
+    margin-left: 5px;
+  }
+  .logo_foto{
+    width: 50px;
+    margin-right: 20px;
+  }
 }
 
 @media(max-width: 770px){ 
