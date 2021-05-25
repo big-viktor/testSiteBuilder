@@ -1,0 +1,33 @@
+@import "header.scss";
+@import "footer.scss";
+@import "cap.scss";
+@import "slide.scss";
+@import "history.scss";
+
+.wraper{
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+    
+}
+.containers{
+    margin: 0 auto;
+}
+.video{
+    position: relative;
+    z-index: 0;
+}
+.video__media{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.delet{
+    display: none;
+}
+#width_back{
+    width: 100%;
+    height: 600px;
+}
