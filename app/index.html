@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="containers">
-        <div style="background: url('img/7ae12d32d738c359ad8b0af94684fb56.png'); background-size: 100% 100%;" class="header">
-            <div>
+        <div style="background: url('img/7ae12d32d738c359ad8b0af94684fb56.png'); background-size: 100% 100%; " class="header">
+            <div style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.48) 100%)">
                 @@include('_header.html')
             </div>
             <div class="container-header-text">
@@ -120,10 +120,18 @@
                         })
                     </div>
                 </div>
+                <div class="container-portfolio">
+                    @@include('_portfolioSwitch.html')
+                </div>
+                <div class="container-reviews" style="background: url(img/de4e129050e9166cb34e3f90c1033988.png); background-size: 100%;">
+                    @@include('_reviews.html')
+                </div>
                 <div class="contactUs-container">
                     @@include('_contactUs.html')
                 </div>
-                    <!-- @@include('_cap.html') -->
+                <div>
+                    @@include('_footer.html')
+                </div>
         </div>
     </div>
    

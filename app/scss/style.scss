@@ -6,6 +6,9 @@
 @import "componentTitle.scss";
 @import "borderComponent.scss";
 @import "contactUs.scss";
+@import "portfolioSwitch.scss";
+@import "switchSlide.scss";
+@import "reviews.scss";
 
 .wraper{
 }
@@ -15,7 +18,7 @@
     
 }
 .header{
-    
+    background: rgba(0, 0, 0, 0.31);
 }
 .container-header-text{
     margin-top: 140px;
@@ -41,10 +44,17 @@
         align-items: center;
         
     }
+    .container-header-text{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .container-group{
     display: flex;
     flex-direction: row;
+    height: 770px;
 }
 .img_group{
 }
@@ -64,7 +74,6 @@
     font-style: normal;
     font-weight: normal;
     font-size: 70px;
-    line-height: 139.4%;
     letter-spacing: 0.2px;
     color: #FFFFFF;
     text-align: center;
@@ -93,6 +102,11 @@
     color: #7C7C7C;
 }
 @media(max-width:1085px){
+    .container-group{
+        display: flex;
+        flex-direction: row;
+        height: 650px;
+    }
     .title-text-group{
         font-size: 10px;
         line-height: 139.4%;
@@ -122,6 +136,21 @@
     }
 }
 @media(max-width:905px){
+    .content-infos{
+        margin-top: 140px; 
+        padding-bottom: 45px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        backdrop-filter: blur(26px); 
+        background: rgba(255, 255, 255, 0.2);
+    }
+    .container-group{
+        display: flex;
+        flex-direction: row;
+        height: 451px;
+    }
     .title-text-group{
         font-size: 6px;
         line-height: 139.4%;
@@ -149,6 +178,29 @@
         font-size: 15px;
         line-height: 139.4%;
         letter-spacing: 0.2px;
+    }
+}
+@media(max-width:765px){
+    .content-infos{
+        margin-top: 70px; 
+        padding-bottom: 45px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        backdrop-filter: blur(26px); 
+        background: rgba(255, 255, 255, 0.2);
+    }
+    .container-header-text{
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-group{
+        display: flex;
+        flex-direction: column;
+        height: 791px;
     }
 }
 @media(max-width:340px){
@@ -208,6 +260,7 @@
 .content-bacground{
     padding-left: 165px;
     padding-top: 65px;
+    padding-bottom: 90px;
     background: #000000;
 }
 .content-border{
@@ -236,4 +289,13 @@
 }
 .delet{
     display: none;
+}
+.container-portfolio{
+    padding-top: 70px;
+}
+.container-reviews{
+}
+.delet{
+    text-decoration: none;
+    transition: 0.5s;
 }
