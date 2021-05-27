@@ -732,17 +732,18 @@ i {
   padding-top: 100px;
 }
 
-.container_btn_reviews li {
+.dots {
   color: rgba(196, 196, 196, 0.45);
 }
 
-.container_btn_reviews li:hover {
+.dots:hover {
   color: #FF9900;
 }
 
 .back_text {
   border: none;
   background: none;
+  padding-right: 15px;
 }
 
 .next_text {
@@ -795,6 +796,10 @@ i:hover {
 
 .text-activ {
   min-width: 550px;
+}
+
+.active_dot {
+  color: #FF9900;
 }
 
 .containers {

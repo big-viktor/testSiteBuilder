@@ -36,16 +36,17 @@
     flex-direction: row;
     justify-content: center;
     padding-top: 100px;
-    li{
-        color: rgba(196, 196, 196, 0.45);
-    }
-    li:hover{
-        color: #FF9900;
-    }
+}
+.dots{
+    color: rgba(196, 196, 196, 0.45);
+}
+.dots:hover{
+    color: #FF9900;
 }
 .back_text{
     border: none;
     background: none;
+    padding-right: 15px;
 }
 .next_text{
     border: none;
@@ -240,4 +241,7 @@ i:hover {
     .text-activ{
         min-width: 250px;
     }
+}
+.active_dot{
+    color: #FF9900;
 }

@@ -1,9 +1,5 @@
 const burger = document.getElementById("burger"); 
-const menuContent = document.querySelector('.menu_content')
-// const headerCatalog = document.querySelector('.content_header_catalog')
-// const contentSvg = document.querySelector('.basket')
-// const menuBody1 = document.querySelector('.header_a1');
-// const menuBody2 = document.querySelector('.header_a2');
+const menuContent = document.querySelector('.menu_content');
 
 
 let burgers = false;
@@ -28,36 +24,50 @@ let nextBtn = document.querySelector('.next_btn');
 let text = document.querySelector('.text');
 let backText = document.querySelector('.back_text'); 
 let nextText = document.querySelector('.next_text');
+let activeHover = document.querySelector('.active_hover');
 
 const sliderBoxs = [];
 
  for (let i = 0; i < text.children.length; i++) {
       let sliders = text.children[i];
         sliderBoxs.push(sliders);
-    }
+    };
     
+    const dots = [];
+
+    for (let i = 0; i < activeHover.children.length; i++) {
+        let activeHovers = activeHover.children[i];
+         dots.push(activeHovers);
+      };
+      console.log(dots)
+
     let activeText = 0;
-    sliderBoxs[activeText]
+    let activeDots = 0;
+    sliderBoxs[activeText];
+    dots[activeDots];
 
 const nextTexts = () =>{
     if(activeText === (sliderBoxs.length -1)){
         nextText.setAttribute("disabled", "disabled");
-        console.log(activeText);
+        dots[activeDots++].classList.add('active_dot');
+        console.log(activeDots);
     }else{
         backText.removeAttribute("disabled");
-        console.log(activeText);
+        console.log(activeDots);
+        dots[activeDots++].classList.add('active_dot');
         sliderBoxs[activeText++].classList.add('delet');
     }
-   
-}
+};
 
 const backTexts = () =>{
     if(activeText === 0){
+        dots[activeDots--].classList.remove('active_dot');
         sliderBoxs[activeText--].classList.remove('delet');
         activeText++;
         backText.setAttribute("disabled", "disabled");
     }else{
         nextText.removeAttribute("disabled");
+        dots[activeDots--].classList.remove('active_dot');
         sliderBoxs[activeText--].classList.remove('delet');
     }
 }
