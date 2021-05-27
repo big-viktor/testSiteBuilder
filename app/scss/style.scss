@@ -33,7 +33,7 @@ body{
 .content-infos{
     margin-top: 240px; 
     padding-bottom: 45px;
-    padding-left: 40px;
+    padding-left: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -83,7 +83,7 @@ body{
     text-align: center;
 }
 .container-text-group{
-    margin: 150px 0px 0px 188px;
+    margin: 150px 40px 0px 188px;
 }
 .title-text-group{
     font-family: Gilroy;
@@ -96,7 +96,7 @@ body{
 }
 @media(max-width:1245px){
     .container-text-group{
-        margin: 150px 0px 0px 100px;
+        margin: 150px 40px 0px 100px;
     }
 }
 @media(max-width:1085px){
@@ -110,12 +110,13 @@ body{
         backdrop-filter: blur(26px); 
         background: rgba(255, 255, 255, 0.2);
     }
-  
     .container-header-text{
         margin-top: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .container_maskGroup{
         height: 470px; 
@@ -131,7 +132,7 @@ body{
         letter-spacing: 0.2px;
     }
     .container-text-group{
-        margin: 150px 0px 0px 100px;
+        margin: 150px 10px 0px 100px;
     }
     .img_group{
         height: 650px;
@@ -227,6 +228,7 @@ body{
         padding-left: 30px;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: flex-end;
         backdrop-filter: blur(26px); 
@@ -246,12 +248,9 @@ body{
 }
 @media(max-width:730px){
     .content-infos{
-        margin-top: 70px; 
-        padding-bottom: 75px;
-        padding-left: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin-top: 40px; 
+        padding-bottom: 25px;
+        padding-left: 30px;
         backdrop-filter: blur(26px); 
         background: rgba(255, 255, 255, 0.2);
     }
@@ -282,7 +281,7 @@ body{
     }
 }
 .content-bacground{
-    padding-left: 165px;
+    padding-left: 40px;
     padding-top: 65px;
     padding-bottom: 90px;
     background: #000000;
@@ -307,11 +306,7 @@ body{
 @media(max-width:620px){
     .content-border{
         display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: flex-start;
-        align-items: flex-start;
-        
+        justify-content: center;
     }
 }
 @media(max-width:920px){
