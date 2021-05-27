@@ -79,6 +79,19 @@ i {
     transform: rotate(135deg);
 }
 @media(max-width:995px){
+    .container_title_backgroud{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    i{
+        width: 6px;
+        height: 6px;
+        border: solid #F9FBFF;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+    }
     .big_slide{
         width: 341px;
         height: 332px;
@@ -135,17 +148,5 @@ i {
     }
 }
 @media(max-width:390px){
-    .container_title_backgroud{
-        display: flex;
-        flex-direction: column;
-    
-    }
-    i{
-        width: 6px;
-        height: 6px;
-        border: solid #F9FBFF;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px;
-    }
+  
 }

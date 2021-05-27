@@ -148,8 +148,8 @@
   position: fixed;
   background: rgb(121, 121, 121);
   width: 100%;
-  top: 5px;
-  left: 5px;
+  top: 0px;
+  left: 0.1px;
   opacity: 0.8;
   z-index: 4;
 }
@@ -208,7 +208,7 @@
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #000000;
+  background-color: #ffffff;
   transition-duration: 0.25s;
 }
 .menu__btn > span::before {

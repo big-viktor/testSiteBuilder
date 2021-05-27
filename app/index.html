@@ -8,17 +8,17 @@
     <title>GulpSite</title>
 </head>
 <body>
-    <div class="containers">
+    <div class="container">
         <div style="background: url('img/7ae12d32d738c359ad8b0af94684fb56.png'); background-size: 100% 100%; " class="header">
             <div style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.68) 0%, rgba(0, 0, 0, 0.48) 100%)">
                 @@include('_header.html')
             </div>
             <div class="container-header-text">
                 <div>
-                    <div>
+                    <div style="max-width: 800px;">
                         @@include('_textContent.html',{
-                            "title":"Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.",
-                            "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at <br> aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor <br> justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam.",
+                            "title":"Lorem ipsum dolor sit amet, consectetur  adipiscing elit.",
+                            "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor  justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam.",
                         })
                     </div>
                     <div style="margin-top: 60px;">
@@ -65,7 +65,7 @@
         </div>
         <div class="wraper">
            <div class="container-group">
-               <div>
+               <div class="container_maskGroup">
                     <img src="img/Mask Group (1).png" alt="#" class="img_group">
                     <div class="content_group">
                         <p class="text_group">10+</p>
@@ -81,10 +81,11 @@
                     })
                    </div>
                    <div>
-                       <p class="title-text-group">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam <br> condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque <br> sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo <br> lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet <br> quam. Orci varius natoque penatibus et magnis dis parturient <br> montes, nascetur ridiculus mus. Phasellus id quam nulla. Proin <br> consequat mauris augue, id suscipit risus mattis non. Sed a <br> vulputate diam.<br> <br> Mauris eget urna quis nisl lacinia convallis. Mauris ut urna sed <br> sem egestas hendrerit at vel quam. Vestibulum maximus velit <br> dui. </p>
+                       <p class="title-text-group">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam <br> condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et magnis dis parturient  montes, nascetur ridiculus mus. Phasellus id quam nulla. Proin  consequat mauris augue, id suscipit risus mattis non. Sed a  vulputate diam.<br> <br> Mauris eget urna quis nisl lacinia convallis. Mauris ut urna sed  sem egestas hendrerit at vel quam. Vestibulum maximus velit dui. </p>
                    </div>
                </div>
            </div>
+           
                 <div class="content-bacground">
                     <div style="margin-bottom: 70px;">
                         @@include('_componentTitle.html',{
